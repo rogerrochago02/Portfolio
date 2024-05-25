@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(208, 248, 246, 0.7);
+    background-image: url(imagens/imagem-de-fundo.jpg), linear-gradient(rgba(224, 242, 241, 0.5), rgba(224, 242, 241, 0.5));
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+h1 {
+    font-size: 42px;
+    padding: 12px;
+    position: relative;
+}
+
+h1::before {
+    content: "";
+    display: block;
+    width: 80%; 
+    max-width: 180px; 
+    height: 5px;
+    background: linear-gradient(90deg, #0f685f ,#05998c , #26a69a);
+    position: absolute;
+    bottom: -10px; 
+    left: 50%; 
+    transform: translate(-50%);
+}
+
+h1, h2, h3 {
+    color: #0f685f;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h2, h3 {
+    font-size: 28px;
+}
+
+p, a, figcaption {
+    font-family: 'Open-sans', sans-serif;
+}
+
+.descricao, .info {
+    max-width: 800px;
+    margin: auto;
+    text-align:  center;
+    line-height: 2em;
+    color: #696e79;
+    padding: 50px;
+}
+
+hr {
+    width: 10%;
+    margin: 70px auto;
+    border: dotted 8px #696e79;
+    border-bottom:  none;
+    opacity: 0.5;
+}
+
+.secao-projeto, .certificados {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 50%);
+    margin: 20px;
+    width: 350px;
+}
+
+.html, .css {
+    width: 300px;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    border-radius: 8px 8px 0 0 ;
+}
+
+.card figcaption {
+    font-size: 18px;
+    padding: 20px;
+}
+
+.card a {
+    background-color: #26a69a;
+    width: 200px;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 20px auto;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 12px;
+    opacity: 0.8;
+}
+
+.card a:hover {
+    opacity: 1.0
+}
+
+footer {
+    background-color: #26988d;
+    color: #fff;
+    margin-top: 80px;
+    padding: 40px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media (min-width: 360px) and (max-width: 425px) {
+    p {
+        text-align: justify;
+    }
+
+    .card {
+        width: 330px;
+    }
+}

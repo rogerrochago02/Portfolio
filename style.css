@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(224, 242, 241, 0.7);
+    background-image: url(imagens/imagem-de-fundo.jpg), linear-gradient(rgba(224, 242, 241, 0.5), rgba(224, 242, 241, 0.5));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+.apresentacao {
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+h1 {
+    color: #05998c;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.625rem;
+    margin: 20px 0;
+}
+
+.container-info h2 {
+    color: #05998c;
+    font-size: 26px;
+    font-weight: 700;
+
+}
+
+h2, h3 {
+    color: #696e79;
+    font-size: 2rem;
+    font-weight: 600;
+    position: relative;   
+}
+
+.container-sobre h2::before {
+    content: "";
+    display: block;
+    width: 80%; 
+    max-width: 180px; 
+    height: 5px;
+    background: linear-gradient(90deg, #05998c , #26a69a, #66bfbf);
+    position: absolute;
+    bottom: -10px; 
+    left: 50%; 
+    transform: translate(-50%);
+}
+
+p, a {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.foto {
+    background-image: url(imagens/Ney.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: #fff;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid teal;
+    margin-top: 40px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.links a {
+    width: 300px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #0000008f;
+    border-radius: 16px;
+    margin-bottom: 8px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.links a:hover {
+    background-color: #42454c;
+}
+
+.links img {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    position: absolute;
+    left: 15px;
+}
+
+.container-sobre {
+    max-width: 1024px;
+    margin: 120px auto;
+    text-align: justify;
+    line-height: 2em;
+}
+
+.container-sobre h2 {
+    text-align: center;
+    margin: 20px auto 20px;
+}
+
+.descricao, .sobre-projetos {
+    max-width: 800px;
+    margin: auto;
+}
+
+.sobre-projetos p {
+    text-align: justify;
+}
+
+.descricao a:hover {
+    text-decoration: underline;
+}
+
+.container-sobre hr {
+    width: 5%;
+    margin: 70px auto;
+    border: dotted 7px #696e79;
+    border-bottom:  none;
+    opacity: 0.5;
+}
+
+
+.container-projetos {
+    padding: 50px 40px;
+}
+
+.sobre-projetos h2 {
+    margin-bottom: 20px;
+}
+
+.sobre-projetos {
+    max-width: 1024px;
+    margin: 0 auto 50px auto;
+    line-height: 2em;
+}
+
+.projetos {
+    max-width: 1360px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    background-color:#fff ;
+    width: 300px;
+    height: 300px;
+    border-radius: 16px;
+    padding-bottom: 20px;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 50%);
+    
+}
+
+.card img {
+    width: 100%;
+    height: 80%;
+    border-radius: 16px 16px 8px 8px;
+}
+
+.botao {
+    width: 70%;
+    margin: 15px auto 0;
+    opacity: 0.8;
+    background-color: #26a69a;
+    border-radius: 8px;
+    padding: 8px;
+    text-align: center;
+}
+
+.botao a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.botao:hover {
+    opacity: 1.0;
+}
+
+.veja-mais {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    line-height: 2em;
+    font-family: sans-serif;
+}
+
+.veja-mais h3 {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #26a69a;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.veja-mais a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #26a69a;
+    color: #fff;
+    margin-top: 80px;
+    padding: 40px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
