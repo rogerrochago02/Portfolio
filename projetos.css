@@ -129,7 +129,7 @@ footer {
     font-family: 'Open Sans', sans-serif;
 }
 
-@media (min-width: 360px) and (max-width: 425px) {
+@media (max-width: 360px) {
     p {
         text-align: justify;
     }
