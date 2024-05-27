@@ -244,17 +244,19 @@ footer {
     font-family: 'Open Sans', sans-serif;
 }
 
+@media (max-width: 840px) {
+    p {
+        margin: 0 30px;
+    }
+}
+
 @media (max-width: 425px) {
     p {
         line-height: 2;
         word-spacing: 2px;
         hyphens: auto;
         text-align: justify;
+        margin: 0 20px;
     }
 }
 
-@media (max-width: 840px) {
-    p {
-        margin: 0 30px;
-    }
-}
