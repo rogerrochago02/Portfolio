@@ -129,12 +129,15 @@ footer {
     font-family: 'Open Sans', sans-serif;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 425px) {
     p {
         text-align: justify;
+        line-height: 2;
+        word-spacing: 2px;
+        hyphens: auto;
     }
 
-    .card {
-        width: 330px;
+    .secao-projeto .card {
+        width: 320px;
     }
 }

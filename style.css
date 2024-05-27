@@ -73,6 +73,11 @@ p, a {
     font-family: 'Open Sans', sans-serif;
 }
 
+.descricao p::first-letter {
+    font-size: 26px;
+    color: #696e79;
+}
+
 .foto {
     background-image: url(imagens/Ney.jpg);
     background-position: center;
@@ -237,4 +242,19 @@ footer {
     padding: 40px;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 425px) {
+    p {
+        line-height: 2;
+        word-spacing: 2px;
+        hyphens: auto;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 840px) {
+    p {
+        margin: 0 30px;
+    }
 }
