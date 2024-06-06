@@ -64,7 +64,7 @@ hr {
     opacity: 0.5;
 }
 
-.secao-projeto, .certificados {
+.secao-projeto {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -90,18 +90,6 @@ hr {
 
 .card:hover {
     transform: scale(1.2);
-}
-
-.html, .css {
-    width: 300px;
-}
-
-#html img {
-    width: 80%;
-}
-
-#css img {
-    width: 80%;
 }
 
 .card img {
