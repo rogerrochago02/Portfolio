@@ -9,6 +9,7 @@ body {
     background-image: url(imagens/imagem-de-fundo.jpg), linear-gradient(rgba(224, 242, 241, 0.5), rgba(224, 242, 241, 0.5));
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     background-blend-mode: overlay;
 }
 
@@ -74,8 +75,9 @@ p, a {
 }
 
 .descricao p::first-letter {
-    font-size: 26px;
+    font-size: 22px;
     color: #696e79;
+    margin-left: 30px;
 }
 
 .foto {
@@ -93,7 +95,11 @@ p, a {
 .links {
     display: flex;
     flex-direction: column;
+    max-width: 1024px;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 30px;
+    gap: 8px;
 }
 
 .links a {
@@ -142,6 +148,10 @@ p, a {
     text-align: justify;
 }
 
+.sobre-projetos p::first-letter {
+    margin-left: 30px;
+}
+
 .descricao a:hover {
     text-decoration: underline;
 }
@@ -159,14 +169,14 @@ p, a {
     padding: 50px 40px;
 }
 
-.sobre-projetos h2 {
-    margin-bottom: 20px;
-}
-
 .sobre-projetos {
     max-width: 1024px;
     margin: 0 auto 50px auto;
     line-height: 2em;
+}
+
+.sobre-projetos h2 {
+    margin-bottom: 20px;
 }
 
 .projetos {
@@ -185,13 +195,17 @@ p, a {
     border-radius: 16px;
     padding-bottom: 20px;
     box-shadow: 0px 1px 10px rgb(0 0 0 / 50%);
-    
 }
 
 .card img {
     width: 100%;
     height: 80%;
     border-radius: 16px 16px 8px 8px;
+}
+
+.card:hover {
+    transform: scale(1.2);
+    transition: 0.5s ease;
 }
 
 .botao {
@@ -260,3 +274,42 @@ footer {
     }
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade {
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+.apresentacao .fade {
+    animation-duration: 1.5s; /* Duração da animação */
+}
+
+.apresentacao .fade:nth-child(2) {
+    animation-delay: 0.5s; /* Atraso para o segundo elemento */
+}
+
+.apresentacao .fade:nth-child(3) {
+    animation-delay: 1s; /* Atraso para o terceiro elemento */
+}
+
+.container-sobre .fade {
+    animation-duration: 2.5s; /* Duração da animação */
+}
+
+.container-sobre .fade:nth-child(2) {
+    animation-delay: 1s; /* Atraso para o segundo elemento */
+}
+
+.container-sobre .fade:nth-child(3) {
+    animation-delay: 1s; /* Atraso para o terceiro elemento */
+}
