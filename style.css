@@ -81,18 +81,6 @@ p, a {
     margin-left: 30px;
 }
 
-.foto {
-    background-image: url(imagens/Ney.jpg);
-    background-position: center;
-    background-size: cover;
-    background-color: #fff;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    border: 2px solid teal;
-    margin-top: 40px;
-}
-
 .links {
     display: flex;
     flex-direction: column;
@@ -114,12 +102,13 @@ p, a {
     display: flex;
     justify-content: center;
     position: relative;
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
 
 .links a:hover {
     background-color: #42454c;
     transform: scale(1.2);
-    transition: 0.5s;
+    transition: 0.5s ease-in-out;
 }
 
 .links img {
@@ -194,17 +183,19 @@ p, a {
     border-radius: 16px;
     padding-bottom: 20px;
     box-shadow: 0px 1px 10px rgb(0 0 0 / 50%);
+    transition: transform 0.5s ease-in-out;
 }
+
+.card:hover {
+    transform: scale(1.2);
+    transition: 0.5s ease-in-out;
+}
+
 
 .card img {
     width: 100%;
     height: 80%;
     border-radius: 16px 16px 8px 8px;
-}
-
-.card:hover {
-    transform: scale(1.2);
-    transition: 0.5s ease;
 }
 
 .botao {
@@ -247,18 +238,18 @@ p, a {
     height: 400px;
 }
 
-.jigalu {
+.html-css {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.jigalu img {
+.html-css img {
     width: 100px;
 }
 
-.jigalu img:hover {
+.html-css img:hover {
     transform: scale(1.5);
     transition: 0.5s;
 }
