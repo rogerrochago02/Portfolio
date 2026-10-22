@@ -1,5 +1,3 @@
-document.documentElement.classList.add("js");
-
 const navToggle = document.querySelector(".nav-toggle");
 const siteNav = document.getElementById("site-nav");
 
@@ -33,28 +31,17 @@ if (navToggle && siteNav) {
   });
 }
 
-const revealElements = document.querySelectorAll(".reveal");
-
-if ("IntersectionObserver" in window) {
-  const revealObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add("is-visible");
-        revealObserver.unobserve(entry.target);
-      });
-    },
-    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
-  );
-
-  revealElements.forEach((element) => revealObserver.observe(element));
-} else {
-  revealElements.forEach((element) => element.classList.add("is-visible"));
-}
-
 const yearElement = document.querySelector("[data-year]");
 if (yearElement) {
   yearElement.textContent = new Date().getFullYear();
+}
+
+const hashTarget = window.location.hash
+  ? document.getElementById(window.location.hash.slice(1))
+  : null;
+
+if (hashTarget) {
+  window.addEventListener("load", () => hashTarget.scrollIntoView());
 }
 
 const copyButton = document.querySelector("[data-copy-email]");

@@ -20,7 +20,7 @@ Portfólio pessoal de QA Júnior com foco em testes manuais, automação E2E com
 
 - `index.html` — página única com apresentação, case de QA, projetos e contato
 - `style.css` — estilos do site
-- `script.js` — menu mobile, animações de entrada e cópia de e-mail
+- `script.js` — menu mobile, link ativo e cópia de e-mail
 - `docs/relatorio-bugs-qa-project-template.pdf` — relatório de bugs do case de QA
 - `imagens/projetos/` — screenshots dos projetos
 - `projetos.html` — redireciona para a seção de projetos da página inicial

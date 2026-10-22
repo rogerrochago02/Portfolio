@@ -1,6 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Roger Rocha">
-  <rect width="64" height="64" rx="14" fill="#0b1219"/>
-  <path d="M18 15h15c8.3 0 13.5 4.9 13.5 12.1 0 5.3-2.8 9.1-7.6 10.8L47 49h-7.2l-7.1-10.2h-7.9V49H18V15Zm6.8 6.2v11.5h7.6c4.3 0 7.1-2.1 7.1-5.8 0-3.7-2.8-5.7-7.1-5.7h-7.6Z" fill="#34d399"/>
-  <circle cx="47" cy="47" r="9" fill="#22d3ee"/>
-  <path d="m42.8 47 2.9 2.9 5.2-6.2" fill="none" stroke="#071018" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect width="64" height="64" fill="#f4efe4"/>
+  <rect x="3.5" y="3.5" width="57" height="57" fill="none" stroke="#16130f" stroke-width="3"/>
+  <path d="M18 15h15c8.3 0 13.5 4.9 13.5 12.1 0 5.3-2.8 9.1-7.6 10.8L47 49h-7.2l-7.1-10.2h-7.9V49H18V15Zm6.8 6.2v11.5h7.6c4.3 0 7.1-2.1 7.1-5.8 0-3.7-2.8-5.7-7.1-5.7h-7.6Z" fill="#16130f"/>
+  <rect x="43" y="43" width="14" height="14" fill="#b23a1e"/>
+  <path d="m46.3 50 2.6 2.6 4.5-5.3" fill="none" stroke="#f4efe4" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#070b10">
-  <title>Roger Rocha — QA Júnior | Automação E2E com Playwright</title>
+  <meta name="theme-color" content="#f4efe4">
+  <title>Roger Rocha — QA Júnior | Testes manuais e automação E2E</title>
   <meta name="description" content="Portfólio de Roger Rocha, QA em formação com foco em testes manuais, automação E2E com Playwright, documentação de bugs e projetos web.">
   <link rel="canonical" href="https://rogerrochago02.github.io/Portfolio/">
 
@@ -18,8 +18,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <script>document.documentElement.classList.add("js");</script>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
@@ -53,9 +52,9 @@
   <main id="main">
     <section id="top" class="hero">
       <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <span class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Disponível para oportunidades em QA</span>
-          <h1>Encontro <span class="text-gradient">falhas</span> antes que elas cheguem ao usuário.</h1>
+        <div class="hero-copy">
+          <p class="status-line"><span class="status-dot" aria-hidden="true"></span> Disponível para oportunidades em QA</p>
+          <h1>Encontro <em>falhas</em> antes que elas cheguem ao usuário.</h1>
           <p class="hero-lead">Sou <strong>Roger Rocha</strong>, desenvolvedor front-end em transição para <strong>Quality Assurance</strong>. Documento bugs com clareza, automatizo fluxos críticos com Playwright e uso CI para tornar a qualidade visível.</p>
 
           <div class="hero-actions">
@@ -69,7 +68,7 @@
             </a>
           </div>
 
-          <div class="hero-socials" aria-label="Links profissionais">
+          <nav class="hero-socials" aria-label="Links profissionais">
             <a href="https://github.com/rogerrochago02" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.72-1.53-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.41-5.25 5.69.41.35.77 1.05.77 2.12 0 1.53-.01 2.76-.01 3.14 0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
               GitHub
@@ -82,95 +81,94 @@
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm8 7.2L4.4 6h15.2L12 11.2ZM4 8.4V18h16V8.4l-8 5.2-8-5.2Z"/></svg>
               E-mail
             </a>
-          </div>
+          </nav>
         </div>
 
-        <div class="hero-visual reveal" aria-hidden="true">
-          <div class="terminal">
-            <div class="terminal-bar">
-              <span class="dot dot-red"></span>
-              <span class="dot dot-yellow"></span>
-              <span class="dot dot-green"></span>
-              <span class="terminal-title">qa-suite — zsh</span>
-            </div>
-            <div class="terminal-body">
-              <div class="terminal-line"><span class="prompt">$</span><span class="cmd">npx playwright test</span></div>
-              <div class="terminal-line"><span class="dim">Running</span> 3 tests using 3 workers</div>
-              <div class="terminal-line"><span class="ok">✓</span> stock_count.spec.ts <span class="dim">(1.8s)</span></div>
-              <div class="terminal-line"><span class="ok">✓</span> record_stock.spec.ts <span class="dim">(2.6s)</span></div>
-              <div class="terminal-line"><span class="ok">✓</span> remove_products.spec.ts <span class="dim">(7.6s)</span></div>
-              <div class="terminal-line terminal-result"><span class="ok">3 passed</span><span class="dim">(8.5s)</span></div>
-            </div>
+        <div class="hero-art">
+          <div class="hero-note" aria-hidden="true">
+            <strong>17</strong>
+            <span>bugs documentados</span>
           </div>
 
-          <div class="floating-card card-bugs">
-            <span class="floating-icon">🐞</span>
-            <div><strong>17 bugs</strong><small>documentados com evidências</small></div>
-          </div>
-          <div class="floating-card card-ci">
-            <span class="floating-icon">✓</span>
-            <div><strong>CI passing</strong><small>GitHub Actions</small></div>
-          </div>
+          <figure class="report">
+            <div class="report-top">
+              <span>Relatório de execução</span>
+              <span>EXEC-04</span>
+            </div>
+            <p class="report-title">Suíte E2E · Stock Bar</p>
+            <p class="report-meta">Playwright · TypeScript · 3 workers</p>
+            <ul class="report-list">
+              <li><span>stock_count.spec.ts</span><span>1.8s</span><span class="pass">PASS</span></li>
+              <li><span>record_stock.spec.ts</span><span>2.6s</span><span class="pass">PASS</span></li>
+              <li><span>remove_products.spec.ts</span><span>7.6s</span><span class="pass">PASS</span></li>
+            </ul>
+            <div class="report-foot">
+              <span>3 passed · 0 failed</span>
+              <span>8.5s</span>
+            </div>
+            <figcaption class="sr-only">Relatório de execução da suíte E2E do Stock Bar: três testes aprovados em 8,5 segundos.</figcaption>
+          </figure>
+
+          <div class="report-stamp" aria-hidden="true">CI verde</div>
         </div>
       </div>
 
-      <div class="container stats reveal">
-        <div class="stat"><strong>17</strong><span>bugs documentados</span></div>
-        <div class="stat"><strong>4</strong><span>bugs críticos</span></div>
-        <div class="stat"><strong>3</strong><span>suítes E2E</span></div>
-        <div class="stat"><strong>100%</strong><span>CI verde</span></div>
+      <div class="container">
+        <div class="ledger">
+          <div class="ledger-item"><span class="ledger-index">01</span><strong>17</strong><span>bugs documentados</span></div>
+          <div class="ledger-item"><span class="ledger-index">02</span><strong>4</strong><span>bugs críticos</span></div>
+          <div class="ledger-item"><span class="ledger-index">03</span><strong>3</strong><span>suítes E2E</span></div>
+          <div class="ledger-item"><span class="ledger-index">04</span><strong>100%</strong><span>CI verde</span></div>
+        </div>
       </div>
     </section>
 
     <section id="sobre" class="section">
-      <div class="container section-grid">
-        <div class="section-intro reveal">
-          <span class="eyebrow">Sobre</span>
+      <div class="container about-grid">
+        <div class="about-copy">
+          <p class="section-label"><span>01</span> Sobre</p>
           <h2>Da interface para a qualidade.</h2>
           <p>Comecei em desenvolvimento web com HTML, CSS e JavaScript, construindo landing pages e sites responsivos. Hoje direciono essa base para <strong>Quality Assurance</strong>: pensar em cenários, reproduzir falhas e comunicar problemas com clareza e evidências.</p>
           <p>Busco minha primeira oportunidade como <strong>QA Júnior</strong>, com foco em testes manuais, testes de API e automação E2E. Gosto de entender o fluxo completo, questionar o comportamento esperado e transformar achados em relatórios que o time consegue agir.</p>
 
           <div class="certificates">
-            <span>Certificações:</span>
+            <span>Certificações</span>
             <a href="https://www.devmedia.com.br/certificado/tecnologia/html/roger-rocha" target="_blank" rel="noopener">HTML5 — DevMedia</a>
             <a href="https://www.devmedia.com.br/certificado/tecnologia/css/roger-rocha" target="_blank" rel="noopener">CSS3 — DevMedia</a>
           </div>
         </div>
 
-        <aside class="focus-card reveal">
+        <aside class="focus" aria-label="Foco atual">
           <h3>Foco atual</h3>
-          <ul class="check-list">
+          <ul class="focus-list">
             <li>Testes manuais e exploratórios</li>
             <li>Automação E2E com Playwright + TypeScript</li>
             <li>CI/CD com GitHub Actions</li>
             <li>Documentação de bugs e evidências</li>
             <li>Testes de API e acessibilidade <span class="muted">(estudos)</span></li>
           </ul>
-          <div class="focus-footer">
-            <span class="status-dot" aria-hidden="true"></span>
-            Aberto a estágio e posições júnior
-          </div>
+          <p class="focus-status"><span class="status-dot" aria-hidden="true"></span> Aberto a estágio e posições júnior</p>
         </aside>
       </div>
     </section>
 
-    <section id="case-qa" class="section section-alt">
+    <section id="case-qa" class="section case-section">
       <div class="container">
-        <div class="section-heading reveal">
-          <span class="eyebrow">Case QA</span>
+        <div class="section-head">
+          <p class="section-label"><span>02</span> Case QA</p>
           <h2>Relatório de bugs — Project Template</h2>
           <p>Durante um processo seletivo para QA Júnior, recebi um aplicativo Android para testar. Realizei uma rodada de testes exploratórios manuais cobrindo login, cadastro, recuperação de senha, edição de perfil, CRUD de posts e chat. Documentei <strong>17 bugs</strong> com passos para reprodução, resultado esperado, resultado obtido e evidências.</p>
         </div>
 
         <div class="case-grid">
-          <article class="case-card reveal">
-            <div class="case-top">
-              <div>
-                <span class="case-label">Testes exploratórios manuais</span>
-                <h3>17 bugs documentados</h3>
-              </div>
-              <span class="badge badge-success">Relatório completo</span>
+          <article class="case-sheet">
+            <div class="case-sheet-top">
+              <span>Project Template · Android</span>
+              <span class="case-status">Relatório completo</span>
             </div>
+
+            <h3>17 bugs documentados</h3>
+            <p class="case-sub">Testes exploratórios manuais em seis módulos do aplicativo.</p>
 
             <div class="severity-bar" role="img" aria-label="Distribuição por severidade: 4 críticos, 2 altos, 6 médios e 5 baixos">
               <span class="sev-critical" style="--w: 23.53%"></span>
@@ -188,10 +186,10 @@
 
             <h4>Bugs críticos encontrados</h4>
             <ul class="bug-list">
-              <li><strong>BUG-04</strong> Recuperação de senha não funciona</li>
-              <li><strong>BUG-09</strong> Posts recém-criados não aparecem no feed nem na busca</li>
-              <li><strong>BUG-11</strong> Mensagens de chat não são salvas</li>
-              <li><strong>BUG-13</strong> Login falha mesmo com credenciais corretas após logout</li>
+              <li><span class="bug-id">BUG-04</span><span>Recuperação de senha não funciona</span></li>
+              <li><span class="bug-id">BUG-09</span><span>Posts recém-criados não aparecem no feed nem na busca</span></li>
+              <li><span class="bug-id">BUG-11</span><span>Mensagens de chat não são salvas</span></li>
+              <li><span class="bug-id">BUG-13</span><span>Login falha mesmo com credenciais corretas após logout</span></li>
             </ul>
 
             <div class="case-actions">
@@ -199,20 +197,20 @@
                 Baixar relatório completo
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14"/></svg>
               </a>
-              <span class="muted">PDF · 19 páginas · 1,1 MB</span>
+              <span class="case-meta">PDF · 19 páginas · 1,1 MB</span>
             </div>
           </article>
 
-          <aside class="case-side reveal">
-            <div class="mini-stats">
-              <div class="mini-stat"><strong>6</strong><span>módulos cobertos</span></div>
-              <div class="mini-stat"><strong>2</strong><span>dias de testes</span></div>
-              <div class="mini-stat"><strong>19</strong><span>páginas de relatório</span></div>
-            </div>
+          <aside class="case-side" aria-label="Resumo do relatório">
+            <dl class="case-facts">
+              <div><dt>Módulos cobertos</dt><dd>6</dd></div>
+              <div><dt>Dias de testes</dt><dd>2</dd></div>
+              <div><dt>Páginas de relatório</dt><dd>19</dd></div>
+            </dl>
 
             <div class="case-note">
               <h4>O que o relatório demonstra</h4>
-              <ul class="check-list">
+              <ul>
                 <li>Reprodução passo a passo dos defeitos</li>
                 <li>Priorização por impacto real no usuário</li>
                 <li>Comunicação clara para times de produto e dev</li>
@@ -226,13 +224,13 @@
 
     <section id="projetos" class="section">
       <div class="container">
-        <div class="section-heading reveal">
-          <span class="eyebrow">Projetos</span>
+        <div class="section-head">
+          <p class="section-label"><span>03</span> Projetos</p>
           <h2>Projetos recentes</h2>
           <p>Uma seleção do que venho construindo: automação de testes, sites responsivos e interfaces com foco em clareza, organização e experiência do usuário.</p>
         </div>
 
-        <article class="featured-project reveal">
+        <article class="featured-project">
           <div class="featured-media">
             <img src="imagens/projetos/stock-bar.jpg" alt="Tela do sistema Stock Bar com formulário de registro de movimentações" loading="lazy">
             <span class="featured-badge">Destaque</span>
@@ -266,12 +264,15 @@
         </article>
 
         <div class="project-grid">
-          <article class="project-card reveal">
+          <article class="project-card">
             <div class="project-media">
               <img src="imagens/projetos/clinica.jpg" alt="Página inicial do site da clínica CM-Life" loading="lazy">
             </div>
             <div class="project-body">
-              <span class="project-kicker">Site institucional</span>
+              <div class="project-meta">
+                <span class="project-kicker">Site institucional</span>
+                <span class="project-number" aria-hidden="true">01</span>
+              </div>
               <h3>CM-Life</h3>
               <p>Site responsivo para clínica médica, com HTML semântico, media queries e organização clara das especialidades.</p>
               <div class="tags"><span>HTML5</span><span>CSS3</span><span>Responsivo</span></div>
@@ -282,12 +283,15 @@
             </div>
           </article>
 
-          <article class="project-card reveal">
+          <article class="project-card">
             <div class="project-media">
               <img src="imagens/projetos/happy-lanches.jpg" alt="Página inicial do site Happy Lanches" loading="lazy">
             </div>
             <div class="project-body">
-              <span class="project-kicker">Landing page</span>
+              <div class="project-meta">
+                <span class="project-kicker">Landing page</span>
+                <span class="project-number" aria-hidden="true">02</span>
+              </div>
               <h3>Happy Lanches</h3>
               <p>Site para lanchonete com cardápio, seções de produtos e layout construído com Flexbox.</p>
               <div class="tags"><span>HTML5</span><span>CSS3</span><span>Flexbox</span></div>
@@ -298,12 +302,15 @@
             </div>
           </article>
 
-          <article class="project-card reveal">
+          <article class="project-card">
             <div class="project-media">
               <img src="imagens/projetos/pet-boutique.jpg" alt="Página inicial do site Pet Boutique" loading="lazy">
             </div>
             <div class="project-body">
-              <span class="project-kicker">Landing page</span>
+              <div class="project-meta">
+                <span class="project-kicker">Landing page</span>
+                <span class="project-number" aria-hidden="true">03</span>
+              </div>
               <h3>Pet Boutique</h3>
               <p>Landing page para pet shop com serviços, marcas parceiras e localização, explorando box model e backgrounds.</p>
               <div class="tags"><span>HTML5</span><span>CSS3</span><span>Box model</span></div>
@@ -314,12 +321,15 @@
             </div>
           </article>
 
-          <article class="project-card reveal">
+          <article class="project-card">
             <div class="project-media">
               <img src="imagens/projetos/paraty.jpg" alt="Página inicial do site sobre Paraty" loading="lazy">
             </div>
             <div class="project-body">
-              <span class="project-kicker">Site turístico</span>
+              <div class="project-meta">
+                <span class="project-kicker">Site turístico</span>
+                <span class="project-number" aria-hidden="true">04</span>
+              </div>
               <h3>Paraty</h3>
               <p>Página turística com galeria, pontos turísticos e contato, usando pseudo-classes e pseudo-elementos.</p>
               <div class="tags"><span>HTML5</span><span>CSS3</span><span>Pseudo-classes</span></div>
@@ -330,12 +340,15 @@
             </div>
           </article>
 
-          <article class="project-card reveal">
+          <article class="project-card">
             <div class="project-media">
               <img src="imagens/projetos/agencia.jpg" alt="Página inicial do site da Agência de Viagens" loading="lazy">
             </div>
             <div class="project-body">
-              <span class="project-kicker">Formulários</span>
+              <div class="project-meta">
+                <span class="project-kicker">Formulários</span>
+                <span class="project-number" aria-hidden="true">05</span>
+              </div>
               <h3>Agência de Viagens</h3>
               <p>Site de agência com ofertas, apresentação de destinos e formulário de orçamento.</p>
               <div class="tags"><span>HTML5</span><span>CSS3</span><span>Formulários</span></div>
@@ -346,12 +359,15 @@
             </div>
           </article>
 
-          <article class="project-card reveal">
+          <article class="project-card">
             <div class="project-media">
               <img src="imagens/projetos/alucar.jpg" alt="Página inicial do site Alucar" loading="lazy">
             </div>
             <div class="project-body">
-              <span class="project-kicker">Formulários</span>
+              <div class="project-meta">
+                <span class="project-kicker">Formulários</span>
+                <span class="project-number" aria-hidden="true">06</span>
+              </div>
               <h3>Alucar</h3>
               <p>Site de aluguel de carros com apresentação da empresa, frota e formulário de contato.</p>
               <div class="tags"><span>HTML5</span><span>CSS3</span><span>Formulários</span></div>
@@ -363,7 +379,7 @@
           </article>
         </div>
 
-        <div class="projects-footer reveal">
+        <div class="projects-footer">
           <a class="btn btn-ghost" href="https://github.com/rogerrochago02?tab=repositories" target="_blank" rel="noopener">
             Ver todos os repositórios
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M10 5H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/></svg>
@@ -372,67 +388,74 @@
       </div>
     </section>
 
-    <section id="stack" class="section section-alt">
+    <section id="stack" class="section stack-section">
       <div class="container">
-        <div class="section-heading reveal">
-          <span class="eyebrow">Stack</span>
+        <div class="section-head">
+          <p class="section-label"><span>04</span> Stack</p>
           <h2>Ferramentas e habilidades</h2>
           <p>O que uso no dia a dia para testar, documentar e construir interfaces.</p>
         </div>
 
-        <div class="stack-grid">
-          <article class="stack-card reveal">
-            <h3>QA & Automação</h3>
-            <div class="tags tags-large">
-              <span>Testes manuais</span>
-              <span>Testes exploratórios</span>
-              <span>Playwright</span>
-              <span>TypeScript</span>
-              <span>Documentação de bugs</span>
-              <span>GitHub Actions</span>
-            </div>
+        <div class="stack-matrix">
+          <article class="stack-col">
+            <span class="stack-index">01</span>
+            <h3>QA &amp; Automação</h3>
+            <ul class="stack-list">
+              <li>Testes manuais</li>
+              <li>Testes exploratórios</li>
+              <li>Playwright</li>
+              <li>TypeScript</li>
+              <li>Documentação de bugs</li>
+              <li>GitHub Actions</li>
+            </ul>
           </article>
 
-          <article class="stack-card reveal">
+          <article class="stack-col">
+            <span class="stack-index">02</span>
             <h3>Front-end</h3>
-            <div class="tags tags-large">
-              <span>HTML5</span>
-              <span>CSS3</span>
-              <span>JavaScript</span>
-              <span>Layout responsivo</span>
-              <span>Flexbox</span>
-              <span>Grid</span>
-              <span>Formulários</span>
-            </div>
+            <ul class="stack-list">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Layout responsivo</li>
+              <li>Flexbox</li>
+              <li>Grid</li>
+              <li>Formulários</li>
+            </ul>
           </article>
 
-          <article class="stack-card reveal">
+          <article class="stack-col">
+            <span class="stack-index">03</span>
             <h3>Ferramentas</h3>
-            <div class="tags tags-large">
-              <span>Git</span>
-              <span>GitHub</span>
-              <span>npm</span>
-              <span>Chrome DevTools</span>
-              <span>VS Code</span>
-            </div>
+            <ul class="stack-list">
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>npm</li>
+              <li>Chrome DevTools</li>
+              <li>VS Code</li>
+            </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="contato" class="section contact-section">
-      <div class="container contact-card reveal">
-        <div>
-          <span class="eyebrow">Contato</span>
+    <section id="contato" class="contact-section">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="section-label"><span>05</span> Contato</p>
           <h2>Vamos conversar?</h2>
           <p>Estou disponível para oportunidades de QA Júnior, estágio ou projetos freelance. Se você procura alguém que documenta bem, testa com critério e aprende rápido, me chama.</p>
         </div>
+
         <div class="contact-actions">
-          <a class="btn btn-primary" href="mailto:rogerrochago02@gmail.com">
-            Enviar e-mail
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-          <button class="btn btn-ghost" type="button" data-copy-email="rogerrochago02@gmail.com">Copiar e-mail</button>
+          <a class="contact-email" href="mailto:rogerrochago02@gmail.com">rogerrochago02@gmail.com</a>
+          <div class="contact-buttons">
+            <a class="btn btn-solid" href="mailto:rogerrochago02@gmail.com">
+              Enviar e-mail
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <button class="btn btn-outline" type="button" data-copy-email="rogerrochago02@gmail.com">Copiar e-mail</button>
+          </div>
           <div class="contact-links">
             <a href="https://www.linkedin.com/in/roger-rocha-gon%C3%A7alves-oliveira-5913b126b/" target="_blank" rel="noopener">LinkedIn</a>
             <span aria-hidden="true">·</span>
