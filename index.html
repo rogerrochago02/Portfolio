@@ -1,138 +1,453 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">  
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <title>Portifólio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070b10">
+  <title>Roger Rocha — QA Júnior | Automação E2E com Playwright</title>
+  <meta name="description" content="Portfólio de Roger Rocha, QA em formação com foco em testes manuais, automação E2E com Playwright, documentação de bugs e projetos web.">
+  <link rel="canonical" href="https://rogerrochago02.github.io/Portfolio/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rogerrochago02.github.io/Portfolio/">
+  <meta property="og:title" content="Roger Rocha — QA Júnior | Automação E2E">
+  <meta property="og:description" content="Testes manuais, automação E2E com Playwright e um case real com 17 bugs documentados.">
+  <meta property="og:image" content="https://rogerrochago02.github.io/Portfolio/imagens/projetos/stock-bar.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
 
-    <main>
-        <section id="voltar" class="apresentacao">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Roger Rocha — início">
+        <span class="brand-mark" aria-hidden="true">RR</span>
+        <span class="brand-text">Roger Rocha <small>QA Júnior</small></span>
+      </a>
 
-            <div class="container-info fade">
-                <h1>Sou Roger</h1>
-                <h2>Um estudante de desenvolvimento web</h2>
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Abrir menu</span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#case-qa">Case QA</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#stack">Stack</a>
+        <a class="nav-cta" href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Disponível para oportunidades em QA</span>
+          <h1>Encontro <span class="text-gradient">falhas</span> antes que elas cheguem ao usuário.</h1>
+          <p class="hero-lead">Sou <strong>Roger Rocha</strong>, desenvolvedor front-end em transição para <strong>Quality Assurance</strong>. Documento bugs com clareza, automatizo fluxos críticos com Playwright e uso CI para tornar a qualidade visível.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projetos">
+              Ver projetos
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="docs/relatorio-bugs-qa-project-template.pdf" target="_blank" rel="noopener" download="Relatorio-Bugs-QA-Project-Template.pdf">
+              Baixar relatório de bugs
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14"/></svg>
+            </a>
+          </div>
+
+          <div class="hero-socials" aria-label="Links profissionais">
+            <a href="https://github.com/rogerrochago02" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.72-1.53-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.41-5.25 5.69.41.35.77 1.05.77 2.12 0 1.53-.01 2.76-.01 3.14 0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/roger-rocha-gon%C3%A7alves-oliveira-5913b126b/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.91 1.65-1.87 3.4-1.87 3.64 0 4.31 2.39 4.31 5.5v6.26ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+              LinkedIn
+            </a>
+            <a href="mailto:rogerrochago02@gmail.com">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm8 7.2L4.4 6h15.2L12 11.2ZM4 8.4V18h16V8.4l-8 5.2-8-5.2Z"/></svg>
+              E-mail
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="terminal">
+            <div class="terminal-bar">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="terminal-title">qa-suite — zsh</span>
             </div>
-
-       
-            <nav class="links fade">
-                <a href="https://github.com/rogerrochago02?tab=repositories" target="_blank">
-                    <img src="imagens/logo_github.png" alt="icone-github">
-                    GitHub
-                </a>
-                <a href="mailto:rogerrochago02@gmail.com" target="_blank">
-                    <img src="imagens/email.png" alt="icone-email">
-                    Email
-                </a>
-                <a id="sobre" href="https://www.linkedin.com/in/roger-rocha-gon%C3%A7alves-oliveira-5913b126b/" target="_blank">
-                    <img src="imagens/linkedin.png" alt="icone-linkedin">
-                    Linkedin
-                </a>
-            </nav>
-           
-
-        </section>
-
-
-        <section class="container-sobre">
-
-            <article class="descricao fade">
-                <h2>Sobre mim</h2>
-                <p>Me chamo Roger Rocha, tenho 18 anos, e estou em busca de um emprego como desenvolvedor web. Tenho muito interesse em explorar a área de tecnologia, estou cursando desenvolvimento web front-end sempre procurando me aprimorar para ingressar na área e um dia me tornar um fullstack.</p>
-            </article>
-
-            <hr>
-
-            <article class="descricao fade">
-                <h2>Habilidades</h2>
-                <p>Sou uma pessoa que valoriza o desenvolvimento de habilidades pessoais e profissionais, e algumas das minhas áreas-chave de destaque são as habilidades de apresentação, aprendizado rápido, liderança de equipe, capacidade de organização, comunicação interpessoal e conhecimento em <a href="https://www.devmedia.com.br/certificado/tecnologia/html/roger-rocha" target="_blank">HTML5</a> e <a href="https://www.devmedia.com.br/certificado/tecnologia/css/roger-rocha" target="_blank">CSS3</a>. No que diz respeito às habilidades citadas considero que já estão bem lapidadas, mas com ciência de que tenho muito o que crescer e melhorar.</p>
-            </article>
-
-            <hr>
-
-            <article class="descricao fade">
-                <h2>Hobbies</h2>
-                <p>Sou apaixonado por música e jogos, e esses são dois grandes pilares dos meus hobbies. No que diz respeito à música, sou um entusiasta tanto como ouvinte quanto como praticante. Adoro explorar diferentes gêneros musicais. Além de ouvir também gosto de tocar instrumentos. Sou um autodidata e ao longo do tempo experientei aprender diversos instrumentos como clarinete, teclado, ocarina e violão. Quando se trata de jogos, sou um verdadeiro aficionado, desde jogos de tabuleiro até videogames. Estou sempre em busca de novas experiências de jogo e, tenho um interesse especial em gêneros como terror, survival, RPGs e, jogos que exijam criação de estratégias para resolver os problemas impostos para chegar no objetivo final.</p>
-            </article>
-        
-            <hr>
-        
-        </section>
-
-        <section id="projetos" class="container-projetos">
-
-            <article class="sobre-projetos">
-                <h2>Principais projetos</h2>
-                <p>Aqui estão alguns dos principais projetos que fiz ao decorrer dos módulos do curso. Estes foram escolhidos justamente por demonstrar diferentes propriedades, além de se adaptarem bem a qualquer tipo de resolução.</p>
-            </article>
-
-            <div class="projetos">
-
-                <div class="card">
-                    <img src="imagens/Pousada_Secreta.png" alt="Pousada_Secreta">
-                    <div class="botao"><a href="https://rogerrochago02.github.io/Pousada_Secreta/" target="_blank">Pousada Secreta</a></div>
-                </div>
-
-                <div class="card">
-                    <img src="imagens/CM-Life.jpg"Paraty">
-                    <div class="botao"><a href="https://rogerrochago02.github.io/clinica/" target="_blank">Clinica CM-Life</a></div>
-                </div>
-
-                <div class="card">
-                    <img src="imagens/Alucar.png" alt="CLinica CM-Life">
-                    <div class="botao"><a href="https://rogerrochago02.github.io/alucar" target="_blank">Alucar</a></div>
-                </div>
-
-                <div class="card">
-                    <img src="imagens/saopaulo.jpg" alt="Agencia">
-                    <div class="botao"><a href="https://rogerrochago02.github.io/Agencia/" target="_blank">Agência de Viagens</a></div>
-                </div>
+            <div class="terminal-body">
+              <div class="terminal-line"><span class="prompt">$</span><span class="cmd">npx playwright test</span></div>
+              <div class="terminal-line"><span class="dim">Running</span> 3 tests using 3 workers</div>
+              <div class="terminal-line"><span class="ok">✓</span> stock_count.spec.ts <span class="dim">(1.8s)</span></div>
+              <div class="terminal-line"><span class="ok">✓</span> record_stock.spec.ts <span class="dim">(2.6s)</span></div>
+              <div class="terminal-line"><span class="ok">✓</span> remove_products.spec.ts <span class="dim">(7.6s)</span></div>
+              <div class="terminal-line terminal-result"><span class="ok">3 passed</span><span class="dim">(8.5s)</span></div>
             </div>
-        </section>
+          </div>
 
-        <aside class="veja-mais">
-            <article class="info">
-                <h3>Veja mais!</h3>
-                <p><a href="projetos.html" target="_blank">Clique aqui</a> para ver todos os projetos feitos no curso com mais detalhes.</p>
-                <p>Apesar de alguns destes projetos não possuírem desing flexível ou responsivo eles não terão tantos problemas ao serem abertos em dispositivos de diferentes resoluções.</p>
-            </article>
+          <div class="floating-card card-bugs">
+            <span class="floating-icon">🐞</span>
+            <div><strong>17 bugs</strong><small>documentados com evidências</small></div>
+          </div>
+          <div class="floating-card card-ci">
+            <span class="floating-icon">✓</span>
+            <div><strong>CI passing</strong><small>GitHub Actions</small></div>
+          </div>
+        </div>
+      </div>
 
-            <div class="certificados">
-    
-                <article class="info">
-                    <h3>Certificados de conclusão</h3>
-                    <p>Aqui está uma seção especial expondo os cerificados de conclusão dos módulos de HTML5 & CSS3.</p>
-                </article>
+      <div class="container stats reveal">
+        <div class="stat"><strong>17</strong><span>bugs documentados</span></div>
+        <div class="stat"><strong>4</strong><span>bugs críticos</span></div>
+        <div class="stat"><strong>3</strong><span>suítes E2E</span></div>
+        <div class="stat"><strong>100%</strong><span>CI verde</span></div>
+      </div>
+    </section>
 
-                <nav class="html-css">
-                    <a href="https://www.devmedia.com.br/certificado/tecnologia/html/roger-rocha" target="_blank">
-                        <figure>
-                            <img src="imagens/certificado.html.png" alt="">
-                        </figure>
-                    </a>
-                    <a href="https://www.devmedia.com.br/certificado/tecnologia/css/roger-rocha" target="_blank">
-                        <figure>
-                            <img src="imagens/certificado.css.png" alt="">
-                        </figure>
-                    </a>
-                </nav>
-            </div>
+    <section id="sobre" class="section">
+      <div class="container section-grid">
+        <div class="section-intro reveal">
+          <span class="eyebrow">Sobre</span>
+          <h2>Da interface para a qualidade.</h2>
+          <p>Comecei em desenvolvimento web com HTML, CSS e JavaScript, construindo landing pages e sites responsivos. Hoje direciono essa base para <strong>Quality Assurance</strong>: pensar em cenários, reproduzir falhas e comunicar problemas com clareza e evidências.</p>
+          <p>Busco minha primeira oportunidade como <strong>QA Júnior</strong>, com foco em testes manuais, testes de API e automação E2E. Gosto de entender o fluxo completo, questionar o comportamento esperado e transformar achados em relatórios que o time consegue agir.</p>
 
+          <div class="certificates">
+            <span>Certificações:</span>
+            <a href="https://www.devmedia.com.br/certificado/tecnologia/html/roger-rocha" target="_blank" rel="noopener">HTML5 — DevMedia</a>
+            <a href="https://www.devmedia.com.br/certificado/tecnologia/css/roger-rocha" target="_blank" rel="noopener">CSS3 — DevMedia</a>
+          </div>
+        </div>
 
-
+        <aside class="focus-card reveal">
+          <h3>Foco atual</h3>
+          <ul class="check-list">
+            <li>Testes manuais e exploratórios</li>
+            <li>Automação E2E com Playwright + TypeScript</li>
+            <li>CI/CD com GitHub Actions</li>
+            <li>Documentação de bugs e evidências</li>
+            <li>Testes de API e acessibilidade <span class="muted">(estudos)</span></li>
+          </ul>
+          <div class="focus-footer">
+            <span class="status-dot" aria-hidden="true"></span>
+            Aberto a estágio e posições júnior
+          </div>
         </aside>
-    </main>
+      </div>
+    </section>
 
-    <footer>
-        &copy;Roger Rocha
-    </footer>
+    <section id="case-qa" class="section section-alt">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Case QA</span>
+          <h2>Relatório de bugs — Project Template</h2>
+          <p>Durante um processo seletivo para QA Júnior, recebi um aplicativo Android para testar. Realizei uma rodada de testes exploratórios manuais cobrindo login, cadastro, recuperação de senha, edição de perfil, CRUD de posts e chat. Documentei <strong>17 bugs</strong> com passos para reprodução, resultado esperado, resultado obtido e evidências.</p>
+        </div>
+
+        <div class="case-grid">
+          <article class="case-card reveal">
+            <div class="case-top">
+              <div>
+                <span class="case-label">Testes exploratórios manuais</span>
+                <h3>17 bugs documentados</h3>
+              </div>
+              <span class="badge badge-success">Relatório completo</span>
+            </div>
+
+            <div class="severity-bar" role="img" aria-label="Distribuição por severidade: 4 críticos, 2 altos, 6 médios e 5 baixos">
+              <span class="sev-critical" style="--w: 23.53%"></span>
+              <span class="sev-high" style="--w: 11.76%"></span>
+              <span class="sev-medium" style="--w: 35.29%"></span>
+              <span class="sev-low" style="--w: 29.42%"></span>
+            </div>
+
+            <div class="severity-legend">
+              <span><i class="legend-critical"></i> 4 críticos</span>
+              <span><i class="legend-high"></i> 2 altos</span>
+              <span><i class="legend-medium"></i> 6 médios</span>
+              <span><i class="legend-low"></i> 5 baixos</span>
+            </div>
+
+            <h4>Bugs críticos encontrados</h4>
+            <ul class="bug-list">
+              <li><strong>BUG-04</strong> Recuperação de senha não funciona</li>
+              <li><strong>BUG-09</strong> Posts recém-criados não aparecem no feed nem na busca</li>
+              <li><strong>BUG-11</strong> Mensagens de chat não são salvas</li>
+              <li><strong>BUG-13</strong> Login falha mesmo com credenciais corretas após logout</li>
+            </ul>
+
+            <div class="case-actions">
+              <a class="btn btn-primary" href="docs/relatorio-bugs-qa-project-template.pdf" target="_blank" rel="noopener" download="Relatorio-Bugs-QA-Project-Template.pdf">
+                Baixar relatório completo
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14"/></svg>
+              </a>
+              <span class="muted">PDF · 19 páginas · 1,1 MB</span>
+            </div>
+          </article>
+
+          <aside class="case-side reveal">
+            <div class="mini-stats">
+              <div class="mini-stat"><strong>6</strong><span>módulos cobertos</span></div>
+              <div class="mini-stat"><strong>2</strong><span>dias de testes</span></div>
+              <div class="mini-stat"><strong>19</strong><span>páginas de relatório</span></div>
+            </div>
+
+            <div class="case-note">
+              <h4>O que o relatório demonstra</h4>
+              <ul class="check-list">
+                <li>Reprodução passo a passo dos defeitos</li>
+                <li>Priorização por impacto real no usuário</li>
+                <li>Comunicação clara para times de produto e dev</li>
+                <li>Organização de evidências e observações gerais</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Projetos</span>
+          <h2>Projetos recentes</h2>
+          <p>Uma seleção do que venho construindo: automação de testes, sites responsivos e interfaces com foco em clareza, organização e experiência do usuário.</p>
+        </div>
+
+        <article class="featured-project reveal">
+          <div class="featured-media">
+            <img src="imagens/projetos/stock-bar.jpg" alt="Tela do sistema Stock Bar com formulário de registro de movimentações" loading="lazy">
+            <span class="featured-badge">Destaque</span>
+          </div>
+          <div class="featured-content">
+            <span class="project-kicker">QA Automation</span>
+            <h3>Stock Bar — QA Automation</h3>
+            <p>Suíte E2E em Playwright e TypeScript para um sistema de controle de estoque de bar. Os testes cobrem contagem inicial, retirada, devolução, histórico e bloqueio de retirada sem estoque.</p>
+            <ul class="project-points">
+              <li>3 suítes E2E cobrindo os fluxos críticos da aplicação.</li>
+              <li>Testes isolados com stub de Firebase em <code>localStorage</code>.</li>
+              <li>Pipeline no GitHub Actions com relatório publicado como artefato.</li>
+            </ul>
+            <div class="tags">
+              <span>Playwright</span>
+              <span>TypeScript</span>
+              <span>GitHub Actions</span>
+              <span>Testes E2E</span>
+            </div>
+            <div class="project-links">
+              <a class="link-arrow" href="https://github.com/rogerrochago02/bar_stock_qa_automation" target="_blank" rel="noopener">
+                Ver repositório
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+              <a class="link-arrow" href="https://github.com/rogerrochago02/bar_stock_qa_automation/actions" target="_blank" rel="noopener">
+                Ver CI
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-media">
+              <img src="imagens/projetos/clinica.jpg" alt="Página inicial do site da clínica CM-Life" loading="lazy">
+            </div>
+            <div class="project-body">
+              <span class="project-kicker">Site institucional</span>
+              <h3>CM-Life</h3>
+              <p>Site responsivo para clínica médica, com HTML semântico, media queries e organização clara das especialidades.</p>
+              <div class="tags"><span>HTML5</span><span>CSS3</span><span>Responsivo</span></div>
+              <div class="project-links">
+                <a class="link-arrow" href="https://rogerrochago02.github.io/clinica/" target="_blank" rel="noopener">Ver site</a>
+                <a class="link-arrow" href="https://github.com/rogerrochago02/clinica" target="_blank" rel="noopener">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media">
+              <img src="imagens/projetos/happy-lanches.jpg" alt="Página inicial do site Happy Lanches" loading="lazy">
+            </div>
+            <div class="project-body">
+              <span class="project-kicker">Landing page</span>
+              <h3>Happy Lanches</h3>
+              <p>Site para lanchonete com cardápio, seções de produtos e layout construído com Flexbox.</p>
+              <div class="tags"><span>HTML5</span><span>CSS3</span><span>Flexbox</span></div>
+              <div class="project-links">
+                <a class="link-arrow" href="https://rogerrochago02.github.io/Happy-Lanches/" target="_blank" rel="noopener">Ver site</a>
+                <a class="link-arrow" href="https://github.com/rogerrochago02/Happy-Lanches" target="_blank" rel="noopener">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media">
+              <img src="imagens/projetos/pet-boutique.jpg" alt="Página inicial do site Pet Boutique" loading="lazy">
+            </div>
+            <div class="project-body">
+              <span class="project-kicker">Landing page</span>
+              <h3>Pet Boutique</h3>
+              <p>Landing page para pet shop com serviços, marcas parceiras e localização, explorando box model e backgrounds.</p>
+              <div class="tags"><span>HTML5</span><span>CSS3</span><span>Box model</span></div>
+              <div class="project-links">
+                <a class="link-arrow" href="https://rogerrochago02.github.io/Pet-Boutique/" target="_blank" rel="noopener">Ver site</a>
+                <a class="link-arrow" href="https://github.com/rogerrochago02/Pet-Boutique" target="_blank" rel="noopener">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media">
+              <img src="imagens/projetos/paraty.jpg" alt="Página inicial do site sobre Paraty" loading="lazy">
+            </div>
+            <div class="project-body">
+              <span class="project-kicker">Site turístico</span>
+              <h3>Paraty</h3>
+              <p>Página turística com galeria, pontos turísticos e contato, usando pseudo-classes e pseudo-elementos.</p>
+              <div class="tags"><span>HTML5</span><span>CSS3</span><span>Pseudo-classes</span></div>
+              <div class="project-links">
+                <a class="link-arrow" href="https://rogerrochago02.github.io/Paraty/" target="_blank" rel="noopener">Ver site</a>
+                <a class="link-arrow" href="https://github.com/rogerrochago02/Paraty" target="_blank" rel="noopener">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media">
+              <img src="imagens/projetos/agencia.jpg" alt="Página inicial do site da Agência de Viagens" loading="lazy">
+            </div>
+            <div class="project-body">
+              <span class="project-kicker">Formulários</span>
+              <h3>Agência de Viagens</h3>
+              <p>Site de agência com ofertas, apresentação de destinos e formulário de orçamento.</p>
+              <div class="tags"><span>HTML5</span><span>CSS3</span><span>Formulários</span></div>
+              <div class="project-links">
+                <a class="link-arrow" href="https://rogerrochago02.github.io/Agencia/" target="_blank" rel="noopener">Ver site</a>
+                <a class="link-arrow" href="https://github.com/rogerrochago02/Agencia" target="_blank" rel="noopener">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media">
+              <img src="imagens/projetos/alucar.jpg" alt="Página inicial do site Alucar" loading="lazy">
+            </div>
+            <div class="project-body">
+              <span class="project-kicker">Formulários</span>
+              <h3>Alucar</h3>
+              <p>Site de aluguel de carros com apresentação da empresa, frota e formulário de contato.</p>
+              <div class="tags"><span>HTML5</span><span>CSS3</span><span>Formulários</span></div>
+              <div class="project-links">
+                <a class="link-arrow" href="https://rogerrochago02.github.io/alucar/" target="_blank" rel="noopener">Ver site</a>
+                <a class="link-arrow" href="https://github.com/rogerrochago02/alucar" target="_blank" rel="noopener">Código</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="projects-footer reveal">
+          <a class="btn btn-ghost" href="https://github.com/rogerrochago02?tab=repositories" target="_blank" rel="noopener">
+            Ver todos os repositórios
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M10 5H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack" class="section section-alt">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Stack</span>
+          <h2>Ferramentas e habilidades</h2>
+          <p>O que uso no dia a dia para testar, documentar e construir interfaces.</p>
+        </div>
+
+        <div class="stack-grid">
+          <article class="stack-card reveal">
+            <h3>QA & Automação</h3>
+            <div class="tags tags-large">
+              <span>Testes manuais</span>
+              <span>Testes exploratórios</span>
+              <span>Playwright</span>
+              <span>TypeScript</span>
+              <span>Documentação de bugs</span>
+              <span>GitHub Actions</span>
+            </div>
+          </article>
+
+          <article class="stack-card reveal">
+            <h3>Front-end</h3>
+            <div class="tags tags-large">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Layout responsivo</span>
+              <span>Flexbox</span>
+              <span>Grid</span>
+              <span>Formulários</span>
+            </div>
+          </article>
+
+          <article class="stack-card reveal">
+            <h3>Ferramentas</h3>
+            <div class="tags tags-large">
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>npm</span>
+              <span>Chrome DevTools</span>
+              <span>VS Code</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section contact-section">
+      <div class="container contact-card reveal">
+        <div>
+          <span class="eyebrow">Contato</span>
+          <h2>Vamos conversar?</h2>
+          <p>Estou disponível para oportunidades de QA Júnior, estágio ou projetos freelance. Se você procura alguém que documenta bem, testa com critério e aprende rápido, me chama.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:rogerrochago02@gmail.com">
+            Enviar e-mail
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <button class="btn btn-ghost" type="button" data-copy-email="rogerrochago02@gmail.com">Copiar e-mail</button>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/roger-rocha-gon%C3%A7alves-oliveira-5913b126b/" target="_blank" rel="noopener">LinkedIn</a>
+            <span aria-hidden="true">·</span>
+            <a href="https://github.com/rogerrochago02" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-year>2026</span> Roger Rocha. Feito com HTML, CSS e JavaScript.</p>
+      <a href="#top">Voltar ao topo ↑</a>
+    </div>
+  </footer>
 </body>
 </html>
-
-
